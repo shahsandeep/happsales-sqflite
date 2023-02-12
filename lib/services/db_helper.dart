@@ -31,9 +31,10 @@ class ContactDb {
       for (var i in contact) {
         Map<String, dynamic> d = i;
         ContactDBModel data = ContactDBModel(
-            contactId: d["contact_id"],
-            contactName: d["contact_name"],
-            accountName: d['account_name']);
+          contactId: d["contact_id"],
+          contactName: d["contact_name"],
+          accountName: d['account_name'],
+        );
         contactList.add(data);
       }
 

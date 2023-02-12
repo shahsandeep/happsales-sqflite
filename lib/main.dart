@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:happsales_asignment/pages/contact_page.dart';
+import 'package:happsales_asignment/view/contact_page.dart';
 
 void main() {
   runApp(

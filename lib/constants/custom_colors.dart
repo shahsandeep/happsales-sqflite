@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomColors {
-  static const colorBlue = Color(0xff0000FF);
+  static const firstItem = Color(0xFFe47175);
+  static const secondItem = Color(0xFFe46592);
+  static const thirdItem = Color(0xFFb36abf);
 
   static Color convertColor(String color) {
     color = color.trim().replaceAll("#", "");

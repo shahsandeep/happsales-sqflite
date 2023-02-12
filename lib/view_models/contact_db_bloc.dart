@@ -10,7 +10,11 @@ class ContactDbBloc {
 
   getDbData() async {
     List<ContactDBModel> contactList = await ContactDb.readContacts();
-    print('working ${contactList.length}');
+    for (var i = 0; i < contactList.length / 2; i++) {
+      var temp = contactList[i];
+      contactList[i] = contactList[contactList.length - 1 - i];
+      contactList[contactList.length - 1 - i] = temp;
+    }
     if (contactList.isEmpty) {
       List<ContactDBModel> response = await _apiProvider.getContacts();
 
